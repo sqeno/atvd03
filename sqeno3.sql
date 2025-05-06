@@ -50,4 +50,6 @@ DELETE FROM ZONA_ELEITORAL where nome_zona = 'zona10';
 
 delete from secao_eleitoral where nome_secao_eleitoral = 'secao10';
 
-select nome_zona, fk_loccalidade_id_localidade from zona_eleitoral where id-zona_eleitoral > 0 order by id_zona_eleitoral desc;
+select id_zona_eleitoral, fk_localidade_id_localidade from zona_eleitoral where id_zona_eleitoral > 0 order by id_zona_eleitoral desc;
+
+select nome_localidade, estado from localidade where id_localidade > 0 order by id_localidade desc;
